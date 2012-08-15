@@ -5,7 +5,6 @@ LIBUV = uv/$(TAG)/obj.target/libuv.a
 uv_srcdir=$(srcdir)/uv
 
 $(LIBUV):
-	echo $(LIBUV)
 	mkdir -p uv
 	if [ ! -L $(uv_srcdir)/out ] ; then ln -s `pwd`/uv $(uv_srcdir)/out ; fi 
 	cd $(uv_srcdir) && ./gyp_uv -f make 
