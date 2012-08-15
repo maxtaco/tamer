@@ -43,8 +43,7 @@ EXTRA_libtamer_la_SOURCES = \
 	fdhmsg.hh fdhmsg.cc \
 	fdh.hh fdh.tt
 libtamer_la_LIBADD = \
-	$(TAMER_FDHELPER_OBJS) \
-	../deps/uv/out/Debug/obj.target/libuv.a
+	$(TAMER_FDHELPER_OBJS) 
 
 bin_PROGRAMS = $(TAMER_FDHELPER_PROGRAM)
 EXTRA_PROGRAMS = tamerfdh
